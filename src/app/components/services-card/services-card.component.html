@@ -1,0 +1,15 @@
+<mat-card [appearance]="'raised'">
+  <mat-card-header>
+    <mat-card-title><h3>{{serviceTitle}}</h3></mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <ng-content></ng-content>
+  </mat-card-content>
+  <mat-card-footer>
+    <mat-list>
+    @for(keyword of keywordList; track keyword){
+      <mat-list-item>{{keyword}}</mat-list-item>
+    }
+    </mat-list>
+  </mat-card-footer>
+</mat-card>

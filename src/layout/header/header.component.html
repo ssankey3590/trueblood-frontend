@@ -3,15 +3,13 @@
     <span class="me-2">
       <button mat-icon-button><mat-icon>menu</mat-icon></button>
     </span>
-    <span class="me-2 text-5xl">Trueblood Services</span>
-    <span class="me-2">
-      <button mat-menu-item>About </button>
+    <span class="me-2" >
+      <div matRipple [matRippleCentered]="true" [routerLink]="'/home'" class="text-2xl cursor-pointer">Trueblood Services</div>
     </span>
-    <span class="me-2">
-      <button mat-menu-item>Services </button>
-    </span>
-    <span class="me-2">
-      <button mat-menu-item>Contact </button>
-    </span>
+    @for (link of NAVIGATION_LINKS; track link) {
+      <span class="me-2">
+        <div matRipple [matRippleCentered]="true" class="cursor-pointer" [routerLink]="'/' + link.route">{{link.title}}</div>
+      </span>
+    }
   </mat-toolbar-row>
 </mat-toolbar>
