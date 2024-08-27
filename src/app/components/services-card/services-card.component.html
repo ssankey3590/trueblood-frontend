@@ -1,4 +1,4 @@
-<mat-card class="services-card" [appearance]="'raised'">
+<mat-card class="hover:bg-sky-300 services-card" [appearance]="'raised'">
   <mat-card-header>
     <mat-card-title><h4>{{serviceTitle}}</h4></mat-card-title>
   </mat-card-header>
@@ -6,7 +6,7 @@
     <ng-content></ng-content>
     <mat-chip-listbox>
     @for(keyword of keywordList; track keyword){
-      <mat-chip>{{keyword}}</mat-chip>
+      <mat-chip class="hover:text-white">{{keyword}}</mat-chip>
     }
     </mat-chip-listbox>
   </mat-card-content>
