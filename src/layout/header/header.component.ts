@@ -5,6 +5,7 @@ import {MatIcon} from "@angular/material/icon";
 import {MatMenuItem} from "@angular/material/menu";
 import {RouterLink, RouterLinkActive} from "@angular/router";
 import {MatRipple} from "@angular/material/core";
+import {NgOptimizedImage} from "@angular/common";
 
 export const NAVIGATION_LINKS = [
   {
@@ -37,7 +38,8 @@ export const NAVIGATION_LINKS = [
     MatMenuItem,
     RouterLink,
     RouterLinkActive,
-    MatRipple
+    MatRipple,
+    NgOptimizedImage
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
