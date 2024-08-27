@@ -2,7 +2,7 @@
   <div class="saturate-50">
     We offer the following services:
   </div>
-  <div class="grid grid-cols-3 gap-4">
+  <div class="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
   @for(service of services; track service) {
     <div>
     <app-services-card [serviceTitle]="service.name" [keywordList]="service.keywords">{{service.description}}</app-services-card>
