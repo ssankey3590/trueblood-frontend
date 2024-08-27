@@ -1,6 +1,5 @@
 <app-page-template [title]="'Services'">
-<app-services-card [serviceTitle]="'Test Service'"
-                   [keywordList]="['banana','flapjacks']"><h3>This is a description</h3></app-services-card>
-<app-services-card [serviceTitle]="'Test Service'"
-                   [keywordList]="['banana','flapjacks']"><h3>This is a description</h3></app-services-card>
+  @for(service of services; track service) {
+    <app-services-card [serviceTitle]="service.name" [keywordList]="service.keywords">{{service.description}}</app-services-card>
+  }
 </app-page-template>
