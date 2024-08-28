@@ -3,6 +3,7 @@ import {MatCard, MatCardActions, MatCardContent, MatCardHeader, MatCardTitle} fr
 import {MatButton} from "@angular/material/button";
 import {ServicesCardComponent} from "../../components/services-card/services-card.component";
 import {PageTemplateComponent} from "../../components/page-template/page-template.component";
+import {HeroComponent} from "../../components/hero/hero.component";
 
 @Component({
   selector: 'app-home-page',
@@ -16,6 +17,7 @@ import {PageTemplateComponent} from "../../components/page-template/page-templat
     MatButton,
     ServicesCardComponent,
     PageTemplateComponent,
+    HeroComponent,
   ],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss'
