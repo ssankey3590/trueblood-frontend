@@ -4,14 +4,14 @@
       <button mat-icon-button><mat-icon>menu</mat-icon></button>
     </span>
     <span class="me-2" >
-      <img class="cursor-pointer" ngSrc="../../assets/ts_logo.jpg" [routerLink]="'/home'" height="50" width="50" alt="Trueblood Services logo">
+      <img class="cursor-pointer" ngSrc="../../assets/ts_logo.png" [routerLink]="'/home'" height="80" width="80" alt="Trueblood Services logo">
     </span>
     <span class="me-2">
       <div matRipple [matRippleCentered]="true" class="text-3xl cursor-pointer" [routerLink]="'/home'">Trueblood Services</div>
     </span>
     @for (link of NAVIGATION_LINKS; track link) {
       <span class="me-2">
-        <div matRipple [matRippleCentered]="true" class="cursor-pointer" [routerLink]="'/' + link.route">{{link.title}}</div>
+        <div matRipple [matRippleCentered]="true" class="rounded-md px-3 py-2 text-sm font-medium hover:bg-sky-700 hover:text-white cursor-pointer" [routerLink]="'/' + link.route">{{link.title}}</div>
       </span>
     }
   </mat-toolbar-row>
