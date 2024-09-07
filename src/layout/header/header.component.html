@@ -3,8 +3,8 @@
     <span class="me-2">
       <button [matMenuTriggerFor]="mainMenu" mat-icon-button><mat-icon>menu</mat-icon></button>
     </span>
-    <span class="invisible md:visible me-2" >
-      <img class="cursor-pointer" ngSrc="../../assets/ts_logo.png" [routerLink]="'/home'" height="80" width="80" alt="Trueblood Services logo">
+    <span class="me-2" >
+      <img class="cursor-pointer" ngSrc="../../assets/ts_logo.png" [routerLink]="'/home'" [style.min-width]="'50px'" height="80" width="80" alt="Trueblood Services logo">
     </span>
     <span class="me-2">
       <div matRipple [matRippleCentered]="true" class="text-3xl cursor-pointer" [routerLink]="'/home'">Trueblood Services</div>
@@ -17,11 +17,11 @@
   </mat-toolbar-row>
 </mat-toolbar>
 
-<mat-menu [hasBackdrop]="false" #mainMenu>
+<mat-menu #mainMenu>
   <div class="bg-sky-100 grid" [style.width]="'150px'">
-    <button class="menu-button hover:bg-sky-900 hover:text-white" [style.height]="'50px'" matRipple [routerLink]="'/home'">Home</button>
-    <button class="menu-button hover:bg-sky-900 hover:text-white" [style.height]="'50px'" matRipple [routerLink]="'/about'">About</button>
-    <button class="menu-button hover:bg-sky-900 hover:text-white" [style.height]="'50px'" matRipple [routerLink]="'/services'">Services</button>
-    <button class="menu-button hover:bg-sky-900 hover:text-white" [style.height]="'50px'" matRipple [routerLink]="'/contact'">Contact</button>
+    <button class="menu-button text-sm font-medium hover:bg-sky-900 hover:text-white" [style.height]="'50px'" matRipple [routerLink]="'/home'">Home</button>
+    <button class="menu-button text-sm font-medium hover:bg-sky-900 hover:text-white" [style.height]="'50px'" matRipple [routerLink]="'/about'">About</button>
+    <button class="menu-button text-sm font-medium hover:bg-sky-900 hover:text-white" [style.height]="'50px'" matRipple [routerLink]="'/services'">Services</button>
+    <button class="menu-button text-sm font-medium hover:bg-sky-900 hover:text-white" [style.height]="'50px'" matRipple [routerLink]="'/contact'">Contact</button>
   </div>
 </mat-menu>
