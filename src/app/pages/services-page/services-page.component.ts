@@ -33,7 +33,7 @@ export class ServicesPageComponent {
     {
       name: 'Minor Electrical',
       description: '',
-      keywords: ['Home security installation','Smoke detector upgrades / replacement','Carbon detector upgrades / replacement']
+      keywords: ['Home security installation','Smoke detector','Carbon detector', 'Upgrades', 'Replacement']
     },
     {
       name: 'Baby Proofing',

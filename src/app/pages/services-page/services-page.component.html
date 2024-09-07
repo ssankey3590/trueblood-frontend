@@ -1,5 +1,5 @@
 <app-page-template [title]="'Services'">
-  <div class="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
+  <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-x-40 gap-y-4 sm:grid-cols-1">
   @for(service of services; track service) {
     <div>
     <app-services-card [serviceTitle]="service.name" [keywordList]="service.keywords">{{service.description}}</app-services-card>
