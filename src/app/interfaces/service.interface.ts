@@ -1,10 +1,10 @@
-export interface Services {
+export interface Service {
   name: string;
   description: string;
   keywords: string[];
 }
 
-export const SERVICES: Services[] = [
+export const SERVICES: Service[] = [
   {
     name: 'Furniture Assembly',
     description: '',

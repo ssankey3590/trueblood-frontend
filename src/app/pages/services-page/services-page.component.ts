@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {ServicesCardComponent} from "../../components/services-card/services-card.component";
 import {PageTemplateComponent} from "../../components/page-template/page-template.component";
-import {SERVICES} from "../../interfaces/services.interface";
+import {SERVICES} from "../../interfaces/service.interface";
 
 @Component({
   selector: 'app-services-page',
