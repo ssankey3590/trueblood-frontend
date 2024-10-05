@@ -6,7 +6,14 @@ import {MatButton, MatIconButton} from "@angular/material/button";
 import {MatFormField, MatLabel} from "@angular/material/form-field";
 import {MatOption, MatSelect} from "@angular/material/select";
 import {Service, SERVICES} from "../../interfaces/service.interface";
-import {MatCard, MatCardContent, MatCardHeader, MatCardSubtitle, MatCardTitle} from "@angular/material/card";
+import {
+  MatCard,
+  MatCardActions,
+  MatCardContent,
+  MatCardHeader,
+  MatCardSubtitle,
+  MatCardTitle
+} from "@angular/material/card";
 import {MatInput} from "@angular/material/input";
 import {CITIES, City} from "../../interfaces/city.interface";
 
@@ -29,7 +36,8 @@ import {CITIES, City} from "../../interfaces/city.interface";
     MatCardTitle,
     MatCardSubtitle,
     MatCardContent,
-    MatInput
+    MatInput,
+    MatCardActions
   ],
   templateUrl: './contact-page.component.html',
   styleUrl: './contact-page.component.scss'
