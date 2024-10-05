@@ -1,8 +1,5 @@
 <app-page-template [title]="'Contact'">
-  <div [style.height]="'100vh'">
-    <p>ANNOYING TEST</p>
-  </div>
-  <div id="quote" [style.height]="'100vh'">
+  <div id="quote">
     <h2>Request a free quote</h2>
     <mat-list>
       <mat-list-item>
@@ -13,4 +10,16 @@
       </mat-list-item>
     </mat-list>
   </div>
+<div>
+  <mat-form-field appearance="fill">
+    <mat-label>Select Service Category</mat-label>
+    <mat-select>
+      @for(service of services; track service) {
+        <mat-option value="{{service.name}}">{{service.name}}</mat-option>
+      }
+      <mat-option value="other">Other</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
 </app-page-template>
+
