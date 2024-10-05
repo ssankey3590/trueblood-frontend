@@ -8,7 +8,7 @@
       </mat-list-item>
     </mat-list>
   <div id="quote">
-    <mat-card [appearance]="'outlined'" class="bg-sky-900">
+    <mat-card [appearance]="'raised'" class="w-1/2 bg-sky-900">
      <mat-card-header>
        <mat-card-title>
     <h2>Request a free quote</h2>
@@ -18,9 +18,18 @@
        </mat-card-subtitle>
      </mat-card-header>
        <mat-card-content>
-         <mat-form-field>
+         <mat-form-field [style.width]="'100%'">
     <mat-label>Enter your name</mat-label>
     <input matInput>
+         </mat-form-field>
+         <mat-form-field [style.width]="'100%'">
+           <mat-label>Select your city</mat-label>
+           <mat-select>
+             @for(city of cities; track city) {
+               <mat-option value="{{city.name}}">{{city.name}}</mat-option>
+             }
+             <mat-option value="other">Other Location</mat-option>
+           </mat-select>
          </mat-form-field>
   <mat-form-field [style.width]="'100%'" appearance="fill">
     <mat-label>Select Service Category</mat-label>

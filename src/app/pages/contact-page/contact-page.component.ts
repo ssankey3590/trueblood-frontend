@@ -8,6 +8,7 @@ import {MatOption, MatSelect} from "@angular/material/select";
 import {Service, SERVICES} from "../../interfaces/service.interface";
 import {MatCard, MatCardContent, MatCardHeader, MatCardSubtitle, MatCardTitle} from "@angular/material/card";
 import {MatInput} from "@angular/material/input";
+import {CITIES, City} from "../../interfaces/city.interface";
 
 @Component({
   selector: 'app-contact-page',
@@ -35,5 +36,6 @@ import {MatInput} from "@angular/material/input";
 })
 export class ContactPageComponent {
   protected readonly services: Service[] = SERVICES;
+  protected readonly cities: City[] = CITIES;
 
 }

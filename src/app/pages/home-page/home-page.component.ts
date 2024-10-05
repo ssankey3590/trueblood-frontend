@@ -4,6 +4,7 @@ import {MatButton} from "@angular/material/button";
 import {ServicesCardComponent} from "../../components/services-card/services-card.component";
 import {PageTemplateComponent} from "../../components/page-template/page-template.component";
 import {HeroComponent} from "../../components/hero/hero.component";
+import {CITIES, City} from "../../interfaces/city.interface";
 
 @Component({
   selector: 'app-home-page',
@@ -23,5 +24,6 @@ import {HeroComponent} from "../../components/hero/hero.component";
   styleUrl: './home-page.component.scss'
 })
 export class HomePageComponent {
+  protected readonly cities: City[] = CITIES;
 
 }
