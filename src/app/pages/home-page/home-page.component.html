@@ -1,6 +1,15 @@
-<app-hero></app-hero>
+<app-hero
+  [backgroundImage]="'assets/alpha-images/home-image-1.jpg'"
+  [height]="'500px'"
+  [customClass]="'custom-hero'"
+>
+  <h1>Trueblood Services</h1>
+  <p>(319) 538-8269</p>
+  <button mat-raised-button [routerLink]="'/contact'" [fragment]="'quote'">Free Quote</button>
+</app-hero>
 <app-page-template [title]="''">
 <app-services-card [serviceTitle]="'Locations'" [keywordList]="['Cedar Rapids','Marion','Iowa City','North Liberty','Coralville']">
   We serve the following cities in the Corridor:
 </app-services-card>
 </app-page-template>
+

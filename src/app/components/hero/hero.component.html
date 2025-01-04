@@ -1,7 +1,13 @@
-<div class="hero-container justify-center items-center flex bg-sky-800 rounded-2xl">
-  <div class="text-center text-white">
-    <h2 class="text-2xl">Trueblood Services</h2>
-    <p>(319) 538-8269</p>
-    <button mat-raised-button [routerLink]="'/contact'" [fragment]="'quote'">Free Quote</button>
+<div
+  class="hero-container {{ customClass }}"
+  [ngStyle]="{
+    'background-image': 'url(' + backgroundImage + ')',
+    'height': height
+  }"
+>
+  <div class="overlay">
+    <div class="content">
+      <ng-content></ng-content>
+    </div>
   </div>
 </div>

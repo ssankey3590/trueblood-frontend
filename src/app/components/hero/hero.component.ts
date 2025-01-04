@@ -1,17 +1,22 @@
-import { Component } from '@angular/core';
-import {MatButton} from "@angular/material/button";
-import {RouterLink} from "@angular/router";
+import {Component, Input} from '@angular/core';
+import {NgStyle} from "@angular/common";
 
 @Component({
   selector: 'app-hero',
   standalone: true,
   imports: [
-    MatButton,
-    RouterLink
+    NgStyle
   ],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
+  /** The URL of the background image */
+  @Input() backgroundImage: string = '';
 
+  /** The height of the hero section */
+  @Input() height: string = '400px';
+
+  /** Optional CSS classes for additional styling */
+  @Input() customClass: string = '';
 }
