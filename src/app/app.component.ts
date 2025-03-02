@@ -11,5 +11,5 @@ import {BodyComponent} from "../layout/body/body.component";
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'Trueblood Services';
+  title = 'Trueblood Handyman Services';
 }

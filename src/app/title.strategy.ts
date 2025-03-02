@@ -11,10 +11,10 @@ export class TemplatePageTitleStrategy extends TitleStrategy {
     const title = this.buildTitle(routerState);
     if (title !== undefined) {
       if (title === '') {
-        this.title.setTitle('Trueblood Services');
+        this.title.setTitle('Trueblood Handyman Services');
       }
       else {
-      this.title.setTitle(`Trueblood Services | ${title}`);
+      this.title.setTitle(`Trueblood Handyman Services | ${title}`);
       }
     }
   }
