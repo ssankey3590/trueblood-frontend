@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import {MatToolbar, MatToolbarRow} from "@angular/material/toolbar";
-import {MatButton, MatIconButton} from "@angular/material/button";
+import {MatIconButton} from "@angular/material/button";
 import {MatIcon} from "@angular/material/icon";
-import {MatMenu, MatMenuContent, MatMenuItem, MatMenuTrigger} from "@angular/material/menu";
-import {RouterLink, RouterLinkActive} from "@angular/router";
+import {MatMenu, MatMenuTrigger} from "@angular/material/menu";
+import {RouterLink} from "@angular/router";
 import {MatRipple} from "@angular/material/core";
 import {NgOptimizedImage} from "@angular/common";
 
@@ -12,10 +12,10 @@ export const NAVIGATION_LINKS = [
     title: "Home",
     route: "home",
   },
-  {
-    title: "About",
-    route: "about",
-  },
+  // {
+  //   title: "About",
+  //   route: "about",
+  // },
   {
     title: "Services",
     route: "services",
@@ -34,15 +34,11 @@ export const NAVIGATION_LINKS = [
     MatToolbarRow,
     MatIconButton,
     MatIcon,
-    MatButton,
-    MatMenuItem,
     RouterLink,
-    RouterLinkActive,
     MatRipple,
     NgOptimizedImage,
     MatMenu,
-    MatMenuTrigger,
-    MatMenuContent
+    MatMenuTrigger
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'

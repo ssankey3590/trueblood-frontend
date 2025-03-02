@@ -4,7 +4,6 @@ import {MatIcon} from "@angular/material/icon";
 import {MatList, MatListItem} from "@angular/material/list";
 import {Service, SERVICES} from "../../interfaces/service.interface";
 import {CITIES, City} from "../../interfaces/city.interface";
-import {ContactFormComponent} from "../../components/contact-form/contact-form.component";
 
 @Component({
   selector: 'app-contact-page',
@@ -14,7 +13,6 @@ import {ContactFormComponent} from "../../components/contact-form/contact-form.c
     MatIcon,
     MatList,
     MatListItem,
-    ContactFormComponent
   ],
   templateUrl: './contact-page.component.html',
   styleUrl: './contact-page.component.scss'

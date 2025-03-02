@@ -11,4 +11,12 @@
 
 :root {
   @include mat.all-component-densities(0);
+  @include mat.divider-overrides((
+  color: #0c4a6e,
+    width: 0.2em
+  ))
+}
+
+.grecaptcha-badge {
+  visibility: hidden !important;
 }

@@ -3,13 +3,46 @@
   [height]="'500px'"
   [customClass]="'custom-hero'"
 >
-  <h1>Trueblood Services</h1>
-  <p>(319) 538-8269</p>
-  <button mat-raised-button [routerLink]="'/contact'" [fragment]="'quote'">Free Quote</button>
+  <h1 class="2xl:text-9xl xl:text-7xl lg:text-6xl text-5xl text font-bold">Trueblood Services</h1>
+    <div class="grid md:grid-cols-2 gap-4">
+  <div class="md:my-4 max-sm:mt-2">
+    <a mat-raised-button href="tel:+1-319-538-8269">
+      <mat-icon aria-label="Call Today" fontIcon="phone"></mat-icon>
+      (319) 538-8269 </a>
+  </div>
+      <div class="md:my-4">
+        <a mat-raised-button href="mailto:trueblood.travis@gmail.com">
+          <mat-icon aria-label="Call Today" fontIcon="email"></mat-icon>Trueblood.Travis&#64;gmail.com</a>
+      </div>
+<!--    <div>-->
+<!--    <button mat-raised-button [routerLink]="'/contact'" [fragment]="'quote'">Free Quote</button>-->
+<!--    </div>-->
+    </div>
 </app-hero>
-<app-page-template [title]="''">
-<app-services-card [serviceTitle]="'Locations'" [keywordList]="['Cedar Rapids','Marion','Iowa City','North Liberty','Coralville']">
-  We serve the following cities in the Corridor:
-</app-services-card>
+<app-page-template [title]="'Handyman Services for Eastern Iowa'">
+  <h2 class="max-lg:text-2xl text-3xl font-bold text-sky-900">Locations</h2>
+  <p>We serve the following locations in the Corridor:</p>
+  <div>
+    <mat-grid-list [cols]="cityCols" rowHeight="50px">
+      <mat-list>
+        @for (city of cities; track $index) {
+          <mat-grid-tile>
+            <mat-list-item><p class="text-xl">{{ city.name }}</p></mat-list-item>
+          </mat-grid-tile>
+        }
+      </mat-list>
+    </mat-grid-list>
+  </div>
+  <div>
+    <h2 class="max-lg:text-2xl text-3xl font-bold text-sky-900">Services</h2>
+    <mat-grid-list gutterSize="5" [cols]="serviceCols" rowHeight="100px">
+        @for (service of services; track $index) {
+          <mat-grid-tile (click)="openService(service)" class="transition hover:cursor-pointer hover:-translate-y-1 duration-300 hover:border-sky-300 hover:shadow-xl"
+            [style.border-width]="'4px'" [style.border-radius]="'8px'" [style.background-color]="'rgba(12,74,110,0.8)'">
+            <div class="text-white font-bold m-4">{{ service.name }}</div>
+          </mat-grid-tile>
+        }
+    </mat-grid-list>
+  </div>
 </app-page-template>
 

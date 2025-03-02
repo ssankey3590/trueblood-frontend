@@ -1,6 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {MatCard,MatCardTitle, MatCardContent, MatCardFooter, MatCardHeader} from "@angular/material/card";
-import {MatList, MatListItem} from "@angular/material/list";
+import {MatCard,MatCardTitle, MatCardContent, MatCardHeader} from "@angular/material/card";
 import {MatChip, MatChipListbox} from "@angular/material/chips";
 
 @Component({
@@ -11,9 +10,6 @@ import {MatChip, MatChipListbox} from "@angular/material/chips";
     MatCardTitle,
     MatCardHeader,
     MatCardContent,
-    MatCardFooter,
-    MatList,
-    MatListItem,
     MatChipListbox,
     MatChip
   ],
